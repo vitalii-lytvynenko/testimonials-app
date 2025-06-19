@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "photo": "images/photo-1.jpg",
+    "logo": "images/logo-1.jpg",
+    "text": "Sales Fortuna made managing sales easier and helped us focus on customers. Its tools have been crucial for our growth and client satisfaction.",
+    "name": "Ethan Morgan",
+    "position": "Founder and CEO, Serene Living Products"
+  },
+  {
+    "id": 2,
+    "photo": "images/photo-2.jpg",
+    "logo": "images/logo-2.jpg",
+    "text": "Sales Fortuna has made sales so much easier for us. It saves time, simplifies the whole process, and helps us land more deals without extra hassle.",
+    "name": "Olivia Hayes",
+    "position": "Owner, Starlight Creations"
+  },
+  {
+    "id": 3,
+    "photo": "images/photo-3.jpg",
+    "logo": "images/logo-3.jpg",
+    "text": "Sales Fortuna has simplified our lead generation, helping us attract qualified prospects effortlessly and drive consistent growth.",
+    "name": "Alexander Reed",
+    "position": "Co-Founder, Opulent Living Group"
+  }
+]

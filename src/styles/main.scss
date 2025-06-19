@@ -1,0 +1,13 @@
+@import './utils/vars';
+@import './utils/mixins';
+@import './blocks/page';
+
+body {
+  margin: 0;
+  font-family: $font-family-base;
+
+  background-image: url('/images/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}

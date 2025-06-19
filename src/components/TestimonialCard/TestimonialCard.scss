@@ -1,0 +1,120 @@
+@import '../../styles/main.scss';
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border: 1px solid #b6b1b1;
+  border-radius: 12px;
+
+  padding: 50px 30px 20px 30px;
+  height: 502px;
+
+  @include on-tablet {
+      padding: 25px 15px 10px 15px;
+      height: 420px;
+  }
+
+  &__logo {
+    height: 91px;
+    display: flex;
+    align-items: center;
+
+    &-img {
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0;
+    color: #9B9A99;
+    text-align: left;
+    position: relative;
+    flex-grow: 1;
+
+    @include on-tablet {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    @include on-desktop {
+      line-height: 32px;
+    }
+  }
+
+  &__quote {
+    position: absolute;
+    right: 0;
+    font-family: "Staatliches", sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    color: #C6C5C6;
+    line-height: 35px;
+    transform: rotate(180deg);
+  }
+
+  &__person {
+    display: flex;
+    align-items: top;
+    gap: 1rem;
+    margin-top: auto;
+  }
+
+  &__photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    @include on-tablet {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    @include on-desktop {
+      line-height: 32px;
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    color: #000000;
+    text-align: left;
+
+    @include on-tablet {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @include on-desktop {
+      line-height: 32px;
+    }
+  }
+
+  &__position {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    color: #000000;
+    text-align: left;
+
+    @include on-tablet {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    @include on-desktop {
+      line-height: 32px;
+    }
+  }
+}
