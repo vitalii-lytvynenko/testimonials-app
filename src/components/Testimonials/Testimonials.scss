@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@import '../../styles/main';
 @import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
 
 .testimonials {
@@ -15,23 +15,35 @@
     overflow: visible;
   }
 
+  .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .swiper-slide {
+    display: flex;
+    height: auto;
+  }
+
   &__prev,
   &__next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: white;
-    border: 1px solid #D1CFCF;
+    border: 1px solid #d1cfcf;
     width: 68px;
     height: 68px;
     padding-top: 10px;
     border-radius: 50%;
-    font-family: "Spinnaker", sans-serif;
+    font-family: 'Spinnaker', sans-serif;
     font-size: 48px;
     font-weight: 400;
     color: #707070;
     cursor: pointer;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+    transition:
+      background 0.3s ease,
+      box-shadow 0.3s ease;
     z-index: 2;
 
     &:hover {
@@ -65,7 +77,7 @@
   }
 
   .swiper-pagination-bullet {
-    background: #D9D9D9;
+    background: #d9d9d9;
     opacity: 1;
     width: 10px;
     height: 10px;
@@ -73,8 +85,7 @@
     transition: background 0.3s;
 
     &-active {
-      background: #4B4B4B;
+      background: #4b4b4b;
     }
   }
 }
-

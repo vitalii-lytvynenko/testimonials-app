@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@import '../../styles/main';
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 .testimonial-card {
@@ -8,15 +8,16 @@
   justify-content: space-between;
 
   background: #ffffff;
-  border: 1px solid #B6B1B1;
+  border: 1px solid #b6b1b1;
   border-radius: 12px;
 
   padding: 50px 30px 20px 30px;
-  height: 502px;
+  height: 100%;
+  min-height: 502px;
 
   @include on-tablet {
-      padding: 25px 15px 10px 15px;
-      height: 420px;
+    padding: 25px 15px 10px 15px;
+    min-height: unset;
   }
 
   &__logo {
@@ -35,7 +36,7 @@
     font-size: 20px;
     line-height: 35px;
     letter-spacing: 0;
-    color: #9B9A99;
+    color: #9b9a99;
     text-align: left;
     position: relative;
     flex-grow: 1;
@@ -53,10 +54,10 @@
   &__quote {
     position: absolute;
     right: 0;
-    font-family: "Staatliches", sans-serif;
+    font-family: 'Staatliches', sans-serif;
     font-size: 96px;
     font-weight: 400;
-    color: #C6C5C6;
+    color: #c6c5c6;
     line-height: 35px;
     transform: rotate(180deg);
   }
